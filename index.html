@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Text Color</title>
+    <style>
+    .color-div {
+      font-size: 20px;
+      margin-bottom: 10px;
+    }
+  </style>
+  <script>
+    function changeTextColor() {
+      var colorInput = document.getElementById("colorInput").value;
+      var colorDiv = document.getElementById("colorDiv");
+      colorDiv.style.color = colorInput;
+    }
+  </script>
+</head>
+<body>
+    <div id="colorDiv" class="color-div">
+    I will change my color according to your choice.
+  </div>
+  <input type="text" id="colorInput" placeholder="Enter a color">
+  <button onclick="changeTextColor()">Change Text Color</button>
+</body>
+</html>
+
+
